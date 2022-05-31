@@ -10,13 +10,13 @@ else:
 
     if (yourOption == "R" and computerOption == "Rock"):
         print("Computer option is: " + computerOption )
-        print("Tie")
+        print("It is a Tie")
     elif (yourOption == "R" and computerOption == "Scissors"):
         print("Computer option is: " + computerOption ) 
-        print("Win")
+        print("You Win")
     elif (yourOption == "R" and computerOption == "Paper"):
         print("Computer option is: " + computerOption )   
-        print("Lose")
+        print("The computer win")
     elif (yourOption == "P" and computerOption == "Rock"):
         print("Computer option is: " + computerOption )    
         print("Win")
