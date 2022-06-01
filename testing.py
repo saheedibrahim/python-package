@@ -5,10 +5,9 @@ while Player not in ['R', 'P', 'S']:
     Player = input("Invalid input please pick between R, P or S: " ).upper()
 else:    
     CPU = random.choice(myList)
-    if((Player == "R" and CPU == "Rock") or (Player == "S" and CPU == "Scissors") or (Player == "P" and CPU == "Paper")):
-        print("Player (" + Player + ")" + " : " + "CPU (" + CPU + ")")
-        Player = input("It is a Tie pls replay: " ).upper()
-        # continue
+    while ((Player == "R" and CPU == "Rock") or (Player == "S" and CPU == "Scissors") or (Player == "P" and CPU == "Paper")):
+            print("Player (" + Player + ")" + " : " + "CPU (" + CPU + ")")
+            Player = input("It is a Tie pls replay: " ).upper()
     else:
         if (Player == "R" and CPU == "Scissors"):
             print("Player (Rock)" + " : " +  "CPU (" + CPU + ")")
@@ -28,6 +27,3 @@ else:
         elif (Player == "S" and CPU == "Paper"):
             print("Player (Scissors)" + " : " +  "CPU (" + CPU + ")")   
             print("You Win")
-        # else:
-        #     print("Player (" + Player + ")" + " : " +  "CPU (" + CPU + ")")
-        #     print("Error")
